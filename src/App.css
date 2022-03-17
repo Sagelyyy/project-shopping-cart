@@ -1,0 +1,14 @@
+.nav--container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shoppingCart{
+    margin-top: 2rem;
+    font-size: 30px;
+}
+
+.nav--links--container{
+    display: flex;
+    justify-content: space-around;
+}
