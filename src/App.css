@@ -1,16 +1,30 @@
+* { margin: 0; padding: 0; }
+
+body{
+    background-color: #77acb4;
+}
+
 .nav--container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #a8dee6;
+    width: 100%;
 }
 
 .shoppingCart{
-    margin-top: 2rem;
     font-size: 30px;
+    align-self:flex-end
+}
+
+.nav--title{
+    align-self: center;
 }
 
 .nav--links--container{
     display: flex;
     justify-content: space-around;
+    background-color: #a8dee6;
 }
 
 .store--items{
@@ -28,10 +42,11 @@
     text-align: center;
     width: 300px;
     box-shadow: 5px 5px 10px black;
+    background-color: #dbffff;
 }
 
 .card--container:hover{
-    box-shadow: 20px 20px 30px black;
+    box-shadow: 20px 20px 25px black;
 }
 
 .card--button{
