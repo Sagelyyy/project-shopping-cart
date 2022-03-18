@@ -1,7 +1,9 @@
+import React from 'react';
 import './App.css';
 import { Outlet, Link } from "react-router-dom"
 
 function App() {
+
   return (
     <div className="App">
       <div className='nav--container'>
@@ -15,9 +17,9 @@ function App() {
         }}
       >
         <div className='nav--links--container'>
-        <Link to="/home">Home</Link> | {" "}
-        <Link to="/store">Store</Link> | {" "}
-        <Link to="/about">About</Link>
+          <Link to="/home">Home</Link> | {" "}
+          <Link to="/store">Store</Link> | {" "}
+          <Link to="/about">About</Link>
         </div>
       </nav>
       <Outlet />

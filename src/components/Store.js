@@ -6,7 +6,21 @@ import '../App.css'
 const Store = () => {
 
     const [cardData, setCardData] = React.useState([])
+    const [cart, setCart] = React.useState([])
 
+    const cartHandler = async (item) => {
+        const itemIndex = cart.findIndex((i) => i.product === item.product);
+        if (itemIndex > -1) {
+          const newCart = cart.slice();
+          newCart[itemIndex].quantity++;
+    
+          setCart(newCart);
+        } else {
+          setCart([...cart, item]);
+        }
+    }
+
+    console.log(cart)
     const getData = () => {
         fetch('./products.json')
             .then(response => response.json())
@@ -22,6 +36,7 @@ const Store = () => {
                 image={card.image}
                 price={card.price}
                 key={nanoid()}
+                onClick={() => cartHandler({product: card.name, quantity: 1})}
             />
         )
     })

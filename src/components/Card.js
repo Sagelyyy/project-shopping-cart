@@ -8,7 +8,7 @@ const Card = (props) => {
             <img className="card--img" src={props.image} />
             <h3 className="card--desc">{props.desc}</h3>
             <h5 className="card--price">{props.price}</h5>
-            <button className="card--button">Add to cart</button>
+            <button onClick={props.onClick} className="card--button">Add to cart</button>
         </div>
     )
 }
