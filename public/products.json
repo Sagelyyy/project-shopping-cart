@@ -10,5 +10,11 @@
         "desc": "The best item in the world again!",
         "image": "./logo512.png",
         "price": "200.00"
+    },
+    {
+        "name": "Diet Soda",
+        "desc": "Nasty!",
+        "image": "./logo512.png",
+        "price": "0.5"
     }
 ]

@@ -10,10 +10,10 @@ function App(props) {
     'fontSize': '13px',
     'position': 'absolute',
     'display': 'float',
-    'align-self': 'center',
-    'text-align': 'center',
-    'background-color': '#e6b0a8',
-    'border-radius': '50%',
+    'alignSelf': 'center',
+    'textAlign': 'center',
+    'backgroundColor': '#e6b0a8',
+    'borderRadius': '50%',
     'width': '18px',
     'height': '18px',
     'left': '96.5%',
@@ -26,7 +26,7 @@ function App(props) {
         <h1 className='nav--title'>IDFK</h1>
         <div className='nav--badge'>
           <Link to="/checkout"><p style={props.cartNumber ? style : null} className='nav--cart--count'>{props.cartNumber < 99 ? props.cartNumber > 0 ? props.cartNumber : null : '...'}</p>
-            <span className="material-icons-outlined shoppingCart">shopping_cart</span></Link>
+            <span style={props.cartNumber ? {color: '#b38079'} : null}className="material-icons-outlined shoppingCart">shopping_cart</span></Link>
         </div>
       </div>
       <nav
