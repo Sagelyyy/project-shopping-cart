@@ -9,7 +9,7 @@ const Card = (props) => {
             <h3 className="card--desc">{props.desc}</h3>
             <h5 className="card--quantity">{props.quantity}</h5>
             <h5 className="card--price">{props.price}</h5>
-            <button onClick={props.onClick} className="card--button">Add to cart</button>
+            {props.onClick && <button onClick={props.onClick} className="card--button">Add to cart</button>}
         </div>
     )
 }
