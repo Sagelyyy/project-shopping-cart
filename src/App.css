@@ -1,23 +1,31 @@
 * { margin: 0; padding: 0; }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 body{
     background-color: #77acb4;
 }
 
 .nav--container{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #a8dee6;
     width: 100%;
 }
 
 .shoppingCart{
     font-size: 30px;
-    align-self:flex-end
+    align-self:flex-start;
+    text-decoration: none;
+    color: inherit;
 }
 
 .nav--title{
+    margin-left: 48%;
     align-self: center;
 }
 
@@ -25,6 +33,7 @@ body{
     display: flex;
     justify-content: space-around;
     background-color: #a8dee6;
+    font-size: 30px;
 }
 
 .store--items{

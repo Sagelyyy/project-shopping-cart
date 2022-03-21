@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className='nav--container'>
         <h1 className='nav--title'>IDFK</h1>
-        <span className="material-icons-outlined shoppingCart">shopping_cart</span>
+        <Link to="/checkout"><span className="material-icons-outlined shoppingCart">shopping_cart</span></Link>
       </div>
       <nav
         style={{

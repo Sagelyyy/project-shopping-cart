@@ -1,20 +1,10 @@
-import { render } from "react-dom";
-import App from "./App";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./components/About";
-import Store from "./components/Store";
-import Home from "./components/Home";
+import React from "react";
+import ReactDOM from "react-dom";
+import RouteSwitch from "./RouteSwitch";
 
-const rootElement = document.getElementById("root");
-render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}>
-        <Route path="home" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="store" element={<Store />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>,
-  rootElement
+ReactDOM.render(
+  <React.StrictMode>
+    <RouteSwitch />
+  </React.StrictMode>,
+  document.getElementById("root")
 );
