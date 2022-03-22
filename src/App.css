@@ -67,3 +67,14 @@ body{
     cursor: pointer;
     margin-bottom: 10px;
 }
+
+.card--amount{
+    text-align: center;
+    width: 20%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.card--incdec{
+    width: 7%;
+}

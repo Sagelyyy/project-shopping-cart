@@ -14,8 +14,6 @@ const Store = (props) => {
             .catch(error => console.log(error))
     }
 
-    console.log(props.shoppingCart)
-
     const cardElements = cardData.map((card) => {
         return (
             <Card
