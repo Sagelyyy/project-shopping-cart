@@ -15,6 +15,7 @@ const Cart = (props) => {
                 key={nanoid()}
                 onIncrease={(() => props.onAmount(item.product, item.quantity, 'increase'))}
                 onDecrease={(() => props.onAmount(item.product, item.quantity, 'decrease'))}
+                onChange={((event) => props.onChange(event, item))}
                 onRemove={(() => props.onRemove(item))}
             />
         )

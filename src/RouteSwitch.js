@@ -46,12 +46,13 @@ const RouteSwitch = () => {
         }
     }
 
-    onchange = async (event, item) => {
+    const onChange = async (event, item) => {
         // TODO: Make it so changing the value in the input field updates the quantity in the item
-        const {value} = event.target
+        const {name, value} = event.target
         const itemIndex = shoppingCart.findIndex((i) => i.product === item.product);
         if (itemIndex > -1) {
             const newCart = shoppingCart.slice();
+            newCart[itemIndex].quantity = value
             setShoppingCart(newCart);
         }
     }
@@ -65,7 +66,7 @@ const RouteSwitch = () => {
                     <Route path="home" element={<Home />} />
                     <Route path="about" element={<About />} />
                     <Route path="store" element={<Store shoppingCart={shoppingCart} onClick={cartHandler} />} />
-                    <Route path="checkout" element={<Cart shoppingCart={shoppingCart} onAmount={cartQuantity} onRemove={removeFromCart} />} />
+                    <Route path="checkout" element={<Cart shoppingCart={shoppingCart} onAmount={cartQuantity} onRemove={removeFromCart} onChange={onChange} />} />
                 </Route>
             </Routes>
         </BrowserRouter>
