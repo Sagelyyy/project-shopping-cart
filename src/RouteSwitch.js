@@ -27,12 +27,12 @@ const RouteSwitch = () => {
         if (itemIndex > -1) {
             const newCart = shoppingCart.slice();
             type === 'increase' ? newCart[itemIndex].quantity = newQuantity + 1 : newQuantity >= 1 ? newCart[itemIndex].quantity = newQuantity - 1 : newCart[itemIndex].quantity = 1
-            if(newCart[itemIndex].quantity === 0){
+            if (newCart[itemIndex].quantity === 0) {
                 newCart[itemIndex].quantity = 1
             }
+            newCart[itemIndex].quantity > 9999 ? newCart[itemIndex].quantity = 9999 : newCart[itemIndex].quantity = newCart[itemIndex].quantity
             setShoppingCart(newCart);
         }
-
     }
 
     const removeFromCart = async (item) => {
@@ -47,12 +47,13 @@ const RouteSwitch = () => {
     }
 
     const onChange = async (event, item) => {
-        // TODO: Make it so changing the value in the input field updates the quantity in the item
-        const {name, value} = event.target
+        const {value } = event.target
         const itemIndex = shoppingCart.findIndex((i) => i.product === item.product);
         if (itemIndex > -1) {
             const newCart = shoppingCart.slice();
-            newCart[itemIndex].quantity = value
+            // We need to check if the value is NaN, if its NaN and the value is <= 0 we return 1
+            newCart[itemIndex].quantity = isNaN(parseInt(value)) ? 1 : parseInt(value) <= 0 ? 1 : parseInt(value)
+            newCart[itemIndex].quantity > 9999 ? newCart[itemIndex].quantity = 9999 : newCart[itemIndex].quantity = newCart[itemIndex].quantity
             setShoppingCart(newCart);
         }
     }

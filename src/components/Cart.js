@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const Cart = (props) => {
 
-    const cartElements = props.shoppingCart.map(item => {
+    const cartElements = props.shoppingCart.map((item, index) => {
         return (
             <Card
                 name={item.product}
@@ -12,7 +12,7 @@ const Cart = (props) => {
                 image={item.image}
                 price={item.price * item.quantity}
                 quantity={item.quantity}
-                key={nanoid()}
+                key={index}
                 onIncrease={(() => props.onAmount(item.product, item.quantity, 'increase'))}
                 onDecrease={(() => props.onAmount(item.product, item.quantity, 'decrease'))}
                 onChange={((event) => props.onChange(event, item))}
