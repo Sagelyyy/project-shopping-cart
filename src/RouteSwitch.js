@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React from "react";
 import App from "./App";
-import About from "./components/About";
 import Store from "./components/Store";
 import Home from "./components/Home";
 import Cart from "./components/Cart";
@@ -36,11 +35,9 @@ const RouteSwitch = () => {
     }
 
     const removeFromCart = async (item) => {
-        console.log('fired!')
         const itemIndex = shoppingCart.findIndex((i) => i.product === item.product);
         if (itemIndex > -1) {
             const newCart = shoppingCart.slice();
-            console.log(newCart[itemIndex])
             newCart.splice(itemIndex, 1)
             setShoppingCart(newCart);
         }
@@ -65,7 +62,6 @@ const RouteSwitch = () => {
             <Routes>
                 <Route path="/" element={<App cartNumber={totalItems} />}>
                     <Route path="home" element={<Home />} />
-                    <Route path="about" element={<About />} />
                     <Route path="store" element={<Store shoppingCart={shoppingCart} onClick={cartHandler} />} />
                     <Route path="checkout" element={<Cart shoppingCart={shoppingCart} onAmount={cartQuantity} onRemove={removeFromCart} onChange={onChange} />} />
                 </Route>

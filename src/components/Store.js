@@ -34,7 +34,6 @@ const Store = (props) => {
 
     return (
         <div>
-            <h1>Store</h1>
             <div className="store--items">
                 {cardElements}
             </div>

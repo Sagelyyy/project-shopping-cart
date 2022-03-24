@@ -6,33 +6,48 @@ a{
 }
 
 body{
-    background-color: #77acb4;
+    background-color: whitesmoke;
 }
+
+.nav--link:hover{
+    text-decoration: underline;
+}
+
+.logo--container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo--image{align-self: center;}
 
 .nav--container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: #a8dee6;
+    justify-content: flex-end;
+    background-color: #EEEEEE;
     width: 100%;
 }
 
 .shoppingCart{
+    margin-top: 6px;
     font-size: 35px;
-    align-self:flex-start;
+    align-self: flex-end;
     text-decoration: none;
-    color: inherit;
+    color: #0049b3;
 }
 
 .nav--title{
-    margin-left: 48%;
+    margin-left: 43%;
     align-self: center;
 }
 
 .nav--links--container{
     display: flex;
     justify-content: space-around;
-    background-color: #a8dee6;
+    background-color: #EEEEEE;
     font-size: 30px;
 }
 
@@ -43,7 +58,7 @@ body{
 
 .store--items{
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -66,30 +81,31 @@ body{
 }
 
 .card--container{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    height: 400px;
     width: 300px;
-    box-shadow: 15px 15px 20px black;
-    background-color: #dbffff;
-}
-
-.card--purchase--container{
-    margin-bottom: 2rem;
+    box-shadow: 15px 35px 35px black;
+    background-color: #EEEEEE;
+    border-radius: 5px;
 }
 
 .card--container:hover{
-    box-shadow: 20px 20px 25px black;
+    box-shadow: 25px 45px 55px black;
 }
 
 .card--button{
-    margin-top: 1rem;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 10px;
     align-self:center;
     width: 100%;
-    height: 100%;
-    background-color: #77acb4;
+    height: 50px;
+    background-color: #0049b3;
     border: none;
     border-bottom: 1.5px solid black;
     border-top: 1.5px solid black;
@@ -98,6 +114,7 @@ body{
 
 .card--button:hover{
     cursor: pointer;
+    background-color:#0073e6;
 }
 
 .card--amount{
