@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/project-shopping-cart/static/css/main.1fc24f51.css",
+    "main.js": "/project-shopping-cart/static/js/main.c3b34f3c.js",
+    "static/media/fantasy-costco.png": "/project-shopping-cart/static/media/fantasy-costco.3c1a8b50fff68c974f04.png",
+    "index.html": "/project-shopping-cart/index.html",
+    "main.1fc24f51.css.map": "/project-shopping-cart/static/css/main.1fc24f51.css.map",
+    "main.c3b34f3c.js.map": "/project-shopping-cart/static/js/main.c3b34f3c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fc24f51.css",
+    "static/js/main.c3b34f3c.js"
+  ]
+}

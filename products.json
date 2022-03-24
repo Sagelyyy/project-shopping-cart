@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Extreme Teen Bible",
+        "desc": "The Extreme Teen Bible is a +1 holy symbol featuring a rad skateboarder on its cover. It allows the user to more easily spread the work of Pan.",
+        "image": "./logo512.png",
+        "price": "350"
+    },
+    {
+        "name": "Phantom Fist",
+        "desc": "This left-handed heavy plate gauntlet gives the wearer a bonus on unarmed attacks. The gauntlet also projects a spectral hand around itself that knocks enemies back 2d4 feet.",
+        "image": "./logo512.png",
+        "price": "400"
+    },
+    {
+        "name": "Stone of Farspeech",
+        "desc": "The Stone of Farspeech is basically a fantasy walkie-talkie or, if you prefer, a fantasy smartphone.",
+        "image": "./logo512.png",
+        "price": "100"
+    },    
+    {
+        "name": "Scuttle Buddy",
+        "desc": "The Scuttle Buddy is a mechanical beetle that could be wound up and used as a scout, spy, or conversational partner (though he won't have anything interesting to say). Scuttle Buddy is limited to four uses.",
+        "image": "./logo512.png",
+        "price": "500"
+    },
+    {
+        "name": "Wand of Switcheroo",
+        "desc": "When pointed at another creature of similar size within 100 feet and activated the holder will switch places with the target if it is willing. If the target is unwilling it must succeed a DC 17 Constitution saving throw to remain in place. Holds 3 charges, regains one charge after a long rest.",
+        "image": "./logo512.png",
+        "price": "1300"
+    },
+    {
+        "name": "Lens of Straight Creepin'",
+        "desc": "The Lens of Straight Creepin' is an item that allows its user to track someone's movements.",
+        "image": "./logo512.png",
+        "price": "700"
+    }
+]
