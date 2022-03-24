@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import React from "react";
 import App from "./App";
 import Store from "./components/Store";
@@ -58,15 +58,15 @@ const RouteSwitch = () => {
     const totalItems = shoppingCart.map(item => item.quantity).reduce((a, b) => a + b, 0)
 
     return (
-        <BrowserRouter>
+        <HashRouter basename="/">
             <Routes>
                 <Route path="/" element={<App cartNumber={totalItems} />}>
-                    <Route path="home" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="store" element={<Store shoppingCart={shoppingCart} onClick={cartHandler} />} />
                     <Route path="checkout" element={<Cart shoppingCart={shoppingCart} onAmount={cartQuantity} onRemove={removeFromCart} onChange={onChange} />} />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
