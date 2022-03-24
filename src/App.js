@@ -37,7 +37,7 @@ function App(props) {
         }}
       >
         <div className='nav--links--container'>
-          <Link className="nav--link" to="/home">Home</Link> | {" "}
+          <Link className="nav--link" to="/">Home</Link> | {" "}
           <Link className="nav--link"to="/store">Store</Link>
         </div>
       </nav>
