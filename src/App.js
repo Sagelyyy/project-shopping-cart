@@ -23,7 +23,7 @@ function App(props) {
   return (
     <div className="App">
       <div className='nav--container'>
-        <h1 className='nav--title'>IDFK</h1>
+        <h1 className='nav--title'>Fantasy Costco</h1>
         <div className='nav--badge'>
           <Link to="/checkout"><p style={props.cartNumber ? style : null} className='nav--cart--count'>{props.cartNumber < 99 ? props.cartNumber > 0 ? props.cartNumber : null : '...'}</p>
             <span style={props.cartNumber ? {color: '#b38079'} : null}className="material-icons-outlined shoppingCart">shopping_cart</span></Link>
